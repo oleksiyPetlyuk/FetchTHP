@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var coordinator = AppCoordinator()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            coordinator.makeRecipesView()
+                .tag(AppCoordinator.Tab.recipes)
         }
-        .padding()
     }
 }
 
