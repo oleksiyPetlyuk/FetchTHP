@@ -20,12 +20,12 @@ The focus on architecture and testing was crucial to create a robust and maintai
 ### Time Spent:
 I spent approximately 8 hours on this project.
 
-### Trade-offs and Decisions: Did you make any significant trade-offs in your approach?
+### Trade-offs and Decisions:
 - Chose Clean Architecture over a simpler approach to improve long-term maintainability, even though it required additional setup.
 - Limited UI enhancements in favor of focusing on architecture and testing.
 - Set iOS 16 as the minimum supported version to align with company policy, trading broader compatibility for access to modern APIs.
 
-### Weakest Part of the Project: What do you think is the weakest part of your project?
+### Weakest Part of the Project:
 - The UI is currently minimal and could be improved with more engaging visuals and interactions.
 - Caching is functional but basic; ideally, it should be replaced with a more robust solution.
 - Lack of persistent storage – Storing recipe data locally would improve offline usability.
