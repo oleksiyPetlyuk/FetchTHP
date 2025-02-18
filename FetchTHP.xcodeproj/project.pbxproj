@@ -14,19 +14,12 @@
 			remoteGlobalIDString = D812C6A22D5D3F1800DE180A;
 			remoteInfo = FetchTHP;
 		};
-		D812C6BE2D5D3F1A00DE180A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D812C69B2D5D3F1800DE180A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D812C6A22D5D3F1800DE180A;
-			remoteInfo = FetchTHP;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D812C6A32D5D3F1800DE180A /* FetchTHP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchTHP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D812C6B32D5D3F1A00DE180A /* FetchTHPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchTHPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D812C6BD2D5D3F1A00DE180A /* FetchTHPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchTHPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86C59FA2D640B69004BD3D2 /* FetchTHP.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FetchTHP.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,11 +31,6 @@
 		D812C6B62D5D3F1A00DE180A /* FetchTHPTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FetchTHPTests;
-			sourceTree = "<group>";
-		};
-		D812C6C02D5D3F1A00DE180A /* FetchTHPUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FetchTHPUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -62,22 +50,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D812C6BA2D5D3F1A00DE180A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		D812C69A2D5D3F1800DE180A = {
 			isa = PBXGroup;
 			children = (
+				D86C59FA2D640B69004BD3D2 /* FetchTHP.xctestplan */,
 				D812C6A52D5D3F1800DE180A /* FetchTHP */,
 				D812C6B62D5D3F1A00DE180A /* FetchTHPTests */,
-				D812C6C02D5D3F1A00DE180A /* FetchTHPUITests */,
 				D812C6A42D5D3F1800DE180A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +68,6 @@
 			children = (
 				D812C6A32D5D3F1800DE180A /* FetchTHP.app */,
 				D812C6B32D5D3F1A00DE180A /* FetchTHPTests.xctest */,
-				D812C6BD2D5D3F1A00DE180A /* FetchTHPUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,29 +120,6 @@
 			productReference = D812C6B32D5D3F1A00DE180A /* FetchTHPTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D812C6BC2D5D3F1A00DE180A /* FetchTHPUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D812C6CD2D5D3F1A00DE180A /* Build configuration list for PBXNativeTarget "FetchTHPUITests" */;
-			buildPhases = (
-				D812C6B92D5D3F1A00DE180A /* Sources */,
-				D812C6BA2D5D3F1A00DE180A /* Frameworks */,
-				D812C6BB2D5D3F1A00DE180A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D812C6BF2D5D3F1A00DE180A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D812C6C02D5D3F1A00DE180A /* FetchTHPUITests */,
-			);
-			name = FetchTHPUITests;
-			packageProductDependencies = (
-			);
-			productName = FetchTHPUITests;
-			productReference = D812C6BD2D5D3F1A00DE180A /* FetchTHPUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,10 +134,6 @@
 						CreatedOnToolsVersion = 16.2;
 					};
 					D812C6B22D5D3F1A00DE180A = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = D812C6A22D5D3F1800DE180A;
-					};
-					D812C6BC2D5D3F1A00DE180A = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = D812C6A22D5D3F1800DE180A;
 					};
@@ -202,7 +155,6 @@
 			targets = (
 				D812C6A22D5D3F1800DE180A /* FetchTHP */,
 				D812C6B22D5D3F1A00DE180A /* FetchTHPTests */,
-				D812C6BC2D5D3F1A00DE180A /* FetchTHPUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +168,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D812C6B12D5D3F1A00DE180A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D812C6BB2D5D3F1A00DE180A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +191,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D812C6B92D5D3F1A00DE180A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +198,6 @@
 			isa = PBXTargetDependency;
 			target = D812C6A22D5D3F1800DE180A /* FetchTHP */;
 			targetProxy = D812C6B42D5D3F1A00DE180A /* PBXContainerItemProxy */;
-		};
-		D812C6BF2D5D3F1A00DE180A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D812C6A22D5D3F1800DE180A /* FetchTHP */;
-			targetProxy = D812C6BE2D5D3F1A00DE180A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -464,13 +397,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W6MAKY98QY;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiypetlyuk.FetchTHPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchTHP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchTHP";
 			};
 			name = Debug;
@@ -483,48 +420,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W6MAKY98QY;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiypetlyuk.FetchTHPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchTHP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchTHP";
-			};
-			name = Release;
-		};
-		D812C6CE2D5D3F1A00DE180A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W6MAKY98QY;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiypetlyuk.FetchTHPUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FetchTHP;
-			};
-			name = Debug;
-		};
-		D812C6CF2D5D3F1A00DE180A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W6MAKY98QY;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.oleksiypetlyuk.FetchTHPUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FetchTHP;
 			};
 			name = Release;
 		};
@@ -554,15 +461,6 @@
 			buildConfigurations = (
 				D812C6CB2D5D3F1A00DE180A /* Debug */,
 				D812C6CC2D5D3F1A00DE180A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D812C6CD2D5D3F1A00DE180A /* Build configuration list for PBXNativeTarget "FetchTHPUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D812C6CE2D5D3F1A00DE180A /* Debug */,
-				D812C6CF2D5D3F1A00DE180A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "F3F37899-2956-4A5F-A858-E00CDE4392BF",
+      "name" : "Test Scheme Action",
+      "options" : {
+        "maximumTestRepetitions" : 3,
+        "testRepetitionMode" : "untilFailure"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:FetchTHP.xcodeproj",
+      "identifier" : "D812C6A22D5D3F1800DE180A",
+      "name" : "FetchTHP"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:FetchTHP.xcodeproj",
+        "identifier" : "D812C6B22D5D3F1A00DE180A",
+        "name" : "FetchTHPTests"
+      }
+    }
+  ],
+  "version" : 1
+}

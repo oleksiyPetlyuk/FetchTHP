@@ -64,9 +64,13 @@ extension HTTPClient {
     }
 }
 
-enum NetworkError: Error {
+enum NetworkError: Error, Equatable {
     case networkError(Error)
     case invalidResponse
     case cancelled
     case notConnectedToInternet
+
+    static func == (lhs: NetworkError, rhs: NetworkError) -> Bool {
+        type(of: lhs) == type(of: rhs) && lhs.localizedDescription == rhs.localizedDescription
+    }
 }

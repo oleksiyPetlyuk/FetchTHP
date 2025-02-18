@@ -29,7 +29,7 @@ final class LiveDiscoverRecipesUseCase: DiscoverRecipesUseCase {
 
             switch sortBy {
             case .cuisine:
-                return recipes.sorted { $0.cuisine < $1.cuisine }
+                return recipes.sorted { ($0.cuisine, $0.name) < ($1.cuisine, $1.name) }
             case .name:
                 return recipes.sorted { $0.name < $1.name }
             }
